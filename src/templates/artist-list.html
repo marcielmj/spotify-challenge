@@ -19,7 +19,10 @@
     </a>
   </div>
   <div class="media-body">
-    <h4 class="media-heading">{{ artist.name }} <span class="badge" ng-bind="popularityTag(artist.popularity)"></span>
+    <h4 class="media-heading">
+      {{ artist.name }}
+      <span class="badge" ng-bind="popularityTag(artist.popularity)"></span>
+      <span class="glyphicon glyphicon-heart" aria-hidden="true" ng-click="likeArtist(artist)" ng-class="{ liked: artist.liked }"></span>
     </h4>
     {{ displayGenres(artist.genres) }}
   </div>

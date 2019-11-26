@@ -19,7 +19,9 @@
     </a>
   </div>
   <div class="media-body">
-    <h4 class="media-heading">{{ album.name }}
+    <h4 class="media-heading">
+      {{ album.name }}
+      <span class="glyphicon glyphicon-heart" aria-hidden="true" ng-click="likeAlbum(album)" ng-class="{ liked: album.liked }"></span>
     </h4>
     {{ displayArtist(album.artists) }}
   </div>

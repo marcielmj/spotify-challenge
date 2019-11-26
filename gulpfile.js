@@ -23,12 +23,13 @@ const path = {
   src: {
     js: [
       'src/js/app.js',
-      'src/js/spotify-api.service.js',
       'src/js/route.config.js',
+      'src/js/services/spotify-api.js',
+      'src/js/services/liked-storage.js',
 
-      'src/js/artist-list.controller.js',
-      'src/js/album-list.controller.js',
-      'src/js/track-list.controller.js'
+      'src/js/controllers/artist-list.js',
+      'src/js/controllers/album-list.js',
+      'src/js/controllers/track-list.js'
     ],
     css: 'src/css/style.css',
     index: 'src/index.html',
