@@ -1,0 +1,31 @@
+{
+  "name": "spotify-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcielmj/spotify-challenge.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Marciel Sousa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcielmj/spotify-challenge/issues"
+  },
+  "homepage": "https://github.com/marcielmj/spotify-challenge#readme",
+  "devDependencies": {
+    "angular": "^1.7.9",
+    "angular-route": "^1.7.9",
+    "bootstrap": "^3.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "jquery": "^3.4.1"
+  }
+}

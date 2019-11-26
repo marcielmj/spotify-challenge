@@ -1,0 +1,26 @@
+<form class="form-horizontal">
+    <div class="form-group">
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="query" ng-model="query">
+      </div>
+
+      <div class="col-sm-2">
+        <button type="submit" class="btn btn-warning btn-block" ng-click="searchTrack(query)" ng-disabled="!query">
+          Buscar Músicas
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div class="media" ng-repeat="track in tracks">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" height="64" width="64" ng-src="{{ track.album.images[0].url }}">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{ track.name }} <span class="badge" ng-bind="popularityTag(artist.popularity)"></span>
+      </h4>
+      {{ displayArtists(track.artists) }}
+    </div>
+  </div>
